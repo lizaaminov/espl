@@ -81,9 +81,7 @@ int bcm(char* frame1, char* frame2)
   
   return 0;
 }
-    
- //   c1=getc(f1);
-  //  c2=getc(f2);
+
     
 void main(int argc, char **argv)
 {
