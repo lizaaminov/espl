@@ -64,6 +64,7 @@ int bcm(char* frame1, char* frame2)
     if(n1!=n2){
     printf("%d\n",i);
     printf("%d %d\n",n1, n2);
+    break;
     
     }
   }
