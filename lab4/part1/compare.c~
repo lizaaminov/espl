@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <hsvmhr.asm>
+
+
+void main(int argc, char **argv)
+{
+        bcm(argv[1],argv[2]);
+
+} 
