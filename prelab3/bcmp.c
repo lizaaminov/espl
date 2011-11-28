@@ -64,6 +64,7 @@ int bcm(char* frame1, char* frame2)
     if(n1!=n2){
     printf("%d\n",i);
     printf("%d %d\n",n1, n2);
+    break;
     
     }
   }
@@ -80,9 +81,7 @@ int bcm(char* frame1, char* frame2)
   
   return 0;
 }
-    
- //   c1=getc(f1);
-  //  c2=getc(f2);
+
     
 void main(int argc, char **argv)
 {
