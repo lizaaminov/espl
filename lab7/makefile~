@@ -1,0 +1,4 @@
+runprog: runprog.o
+	gcc -o prsym prsym.o font.o
+runprog.o: runprog.c
+	gcc -c -o runprog.o runprog.c
