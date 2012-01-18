@@ -67,12 +67,8 @@ if __name__ == '__main__':
         print changed_files
         print 'Removed', removed_files
 
-    dirs = sys.argv[2:]
+    dirs = sys.argv[1:]
     if not dirs:
         dirs = ["."]
-    print dirs
-    dirs1 = sys.argv[1:]
-    if not dirs1:
-        dirs1 = ["."]
-    print dirs1    
-    Dirwatch(dirs, os.system(dirs1 + " " + dirs), 1).watch()
+  
+    Dirwatch(dirs, f, 1).watch()

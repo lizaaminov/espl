@@ -70,5 +70,6 @@ if __name__ == '__main__':
     dirs = sys.argv[1:]
     if not dirs:
         dirs = ["."]
-  
+
+    
     Dirwatch(dirs, f, 1).watch()
