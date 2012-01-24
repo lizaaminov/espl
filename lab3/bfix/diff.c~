@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include "diff.h"
+
+int fputdiff(FILE *stream, struct diff *diff) {
+    return fprintf(stream, "byte %lu -%u +%u\n",
+                           diff->offset, diff->old, diff->new);
+}
+
+struct diff *parsediff(char *s, struct diff *diff) {
+    char **sp = &s;
+    printf("3.1.1\n");
+    *sp = strchr(*sp, ' '); /* skip 'byte' */
+    printf("3.2.1\n");
+    diff->offset = strtol(*sp, sp, 10);
+    printf("3.1\n");
+    diff->old = -strtol(*sp, sp, 10);
+    printf("3.2\n");
+    diff->new = strtol(*sp, sp, 10);
+
+    return diff;
+}
